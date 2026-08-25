@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kızıldağ | Karadeniz Pide Restoranı</title>
+<meta name="description" content="Kızıldağ Karadeniz Pide Restoranı — taş fırında, odun ateşinde, dağın eteğinden sofranıza.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Work+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 30L13 12L20 22L26 8L38 30Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="26" cy="9" r="2.4" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand-text">Kızıldağ</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#hakkimizda">Hikâyemiz</a>
+      <a href="#menu">Menü</a>
+      <a href="#galeri">Ocak Başı</a>
+      <a href="#rezervasyon">Rezervasyon</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <a href="#rezervasyon" class="btn btn-copper nav-cta">Sofra Ayırt</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-mist"></div>
+  <svg class="hero-mountains" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="skyGlow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#3a1a12"/>
+        <stop offset="55%" stop-color="#20140f"/>
+        <stop offset="100%" stop-color="#121a15"/>
+      </linearGradient>
+      <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#e2894c" stop-opacity="0.9"/>
+        <stop offset="45%" stop-color="#c1793a" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#c1793a" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect x="0" y="0" width="1600" height="900" fill="url(#skyGlow)"/>
+    <circle cx="1180" cy="330" r="260" fill="url(#sunGlow)"/>
+    <circle cx="1180" cy="330" r="70" fill="#e2894c" opacity="0.85"/>
+
+    <!-- ridge far -->
+    <path class="ridge ridge-far" d="M0 560 L120 500 L260 545 L420 460 L560 520 L720 470 L880 540 L1040 480 L1220 530 L1380 470 L1600 540 L1600 900 L0 900 Z" fill="#24352b"/>
+    <!-- ridge mid -->
+    <path class="ridge ridge-mid" d="M0 640 L150 590 L300 630 L480 560 L640 620 L820 570 L980 630 L1150 580 L1320 640 L1600 600 L1600 900 L0 900 Z" fill="#1b2a21"/>
+    <!-- ridge near / Kızıldağ peak -->
+    <path class="ridge ridge-near" d="M0 760 L200 700 L340 640 L470 560 L610 720 L760 660 L900 740 L1080 680 L1250 760 L1400 700 L1600 750 L1600 900 L0 900 Z" fill="#141f19"/>
+  </svg>
+
+  <div class="hero-content">
+    <p class="eyebrow">Karadeniz'in taş fırınından</p>
+    <h1 class="hero-title">Kızıldağ</h1>
+    <p class="hero-sub">Ocak başında yoğrulan hamur, dağdan inen tereyağı, nesilden nesile taşınan bir sofra.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-copper">Menüyü Keşfet</a>
+      <a href="#rezervasyon" class="btn btn-outline">Sofra Ayırt</a>
+    </div>
+  </div>
+
+  <a href="#hakkimizda" class="scroll-cue" aria-label="Aşağı kaydır">
+    <span></span>
+  </a>
+</section>
+
+<!-- ================= HİKAYE ================= -->
+<section class="story" id="hakkimizda">
+  <div class="story-wrap">
+    <div class="story-figure" aria-hidden="true">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="180" fill="none" stroke="#c1793a" stroke-width="1" opacity="0.4"/>
+        <path d="M90 260 Q200 120 310 260" fill="none" stroke="#c1793a" stroke-width="2"/>
+        <path d="M90 260 Q200 150 310 260" fill="none" stroke="#7a2e1f" stroke-width="2" opacity="0.7"/>
+        <ellipse cx="200" cy="280" rx="130" ry="18" fill="#c1793a" opacity="0.15"/>
+        <g stroke="#ede7d9" stroke-width="1.4" opacity="0.55">
+          <path d="M150 260 C150 200 250 200 250 260"/>
+          <path d="M170 260 C170 220 230 220 230 260"/>
+        </g>
+      </svg>
+    </div>
+    <div class="story-text">
+      <span class="section-eyebrow">01 — Hikâyemiz</span>
+      <h2>Dağın verdiği, ocağın pişirdiği</h2>
+      <p>Kızıldağ, Karadeniz'in sisli yamaçlarından şehre inen bir sofra hikâyesi. Fırınımız hâlâ odunla yanar, hamurumuz hâlâ elle yoğrulur, kaymağımız hâlâ komşu köyden gelir. Kuruluşumuzdan bu yana tek bir şeyi değiştirmedik: ustalarımızın elinde şekillenen pideyi, taşın üzerinde, doğru ateşte pişirmek.</p>
+      <p>Her tabak, Karadeniz'in yeşil vadilerinden, mısır tarlalarından ve fındık bahçelerinden bir iz taşır. Siz sofraya oturduğunuzda, biz hâlâ dağın eteğindeyiz.</p>
+      <div class="story-stats">
+        <div><strong>1987</strong><span>köyden şehre ilk fırın</span></div>
+        <div><strong>100%</strong><span>odun ateşi, taş fırın</span></div>
+        <div><strong>3.</strong><span>kuşak aile ustalığı</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENÜ ================= -->
+<section class="menu-section" id="menu">
+  <div class="menu-head">
+    <span class="section-eyebrow">02 — Sofra</span>
+    <h2>Menü</h2>
+    <p class="menu-intro">Taş fırından çıkan sıcaklığıyla, dağın kaymağıyla, ocağın demiyle — Kızıldağ sofrası dört durakta anlatılır.</p>
+  </div>
+
+  <div class="menu-tabs" id="menuTabs" role="tablist">
+    <button class="tab-btn is-active" role="tab" aria-selected="true" data-cat="ara_sicak">Ara Sıcaklar</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-cat="pide">Pideler</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-cat="icecek">İçecekler</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-cat="tatli">Tatlılar</button>
+  </div>
+
+  <div class="menu-panel" id="menuPanel">
+    <p class="menu-loading" id="menuLoading">Sofra hazırlanıyor…</p>
+  </div>
+</section>
+
+<!-- ================= OCAK BAŞI / GALERİ ================= -->
+<section class="gallery" id="galeri">
+  <span class="section-eyebrow">03 — Ocak Başı</span>
+  <h2>Taşın ve ateşin arasında</h2>
+  <div class="gallery-grid">
+    <div class="gallery-card gallery-card--wide">
+      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+        <rect width="600" height="400" fill="#1b2a21"/>
+        <ellipse cx="300" cy="330" rx="260" ry="40" fill="#0f1712"/>
+        <path d="M120 330 Q300 120 480 330 Z" fill="#241811"/>
+        <path d="M150 330 Q300 160 450 330 Z" fill="#3a2416"/>
+        <g fill="#e2894c">
+          <circle cx="270" cy="270" r="6" opacity="0.9"/>
+          <circle cx="300" cy="250" r="5" opacity="0.7"/>
+          <circle cx="330" cy="275" r="7" opacity="0.85"/>
+        </g>
+      </svg>
+      <div class="gallery-cap"><h3>Taş Fırın</h3><p>Sabah 5'te yakılır, gün boyu 320°C'de kararlı ateşte tutulur.</p></div>
+    </div>
+    <div class="gallery-card">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="400" fill="#20140f"/>
+        <circle cx="200" cy="200" r="120" fill="none" stroke="#c1793a" stroke-width="2" opacity="0.5"/>
+        <path d="M140 220 Q200 150 260 220" stroke="#ede7d9" stroke-width="2" fill="none" opacity="0.6"/>
+      </svg>
+      <div class="gallery-cap"><h3>El Açması Hamur</h3><p>Her sabah, aynı elde yoğrulan tarif.</p></div>
+    </div>
+    <div class="gallery-card">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="400" fill="#241811"/>
+        <rect x="80" y="260" width="240" height="16" rx="8" fill="#7a2e1f"/>
+        <rect x="110" y="180" width="180" height="90" rx="10" fill="#c1793a" opacity="0.8"/>
+      </svg>
+      <div class="gallery-cap"><h3>Bakır Tepsi</h3><p>Sofraya geldiği hâliyle, sıcak servis edilir.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REZERVASYON ================= -->
+<section class="reserve" id="rezervasyon">
+  <div class="reserve-wrap">
+    <div class="reserve-info">
+      <span class="section-eyebrow">04 — Sofra Ayırt</span>
+      <h2>Bize bir akşam ayırın</h2>
+      <p>Dağın kokusunu ve ocağın sıcaklığını sofranıza taşımak için yerinizi ayırtın. Ekibimiz en kısa sürede sizi arayarak teyit edecek.</p>
+      <ul class="reserve-hours">
+        <li><span>Salı — Pazar</span><span>12:00 – 23:00</span></li>
+        <li><span>Pazartesi</span><span>Kapalı</span></li>
+      </ul>
+    </div>
+
+    <form class="reserve-form" id="reserveForm">
+      <div class="form-row">
+        <label>Ad Soyad
+          <input type="text" name="name" required placeholder="Adınız Soyadınız">
+        </label>
+        <label>Telefon
+          <input type="tel" name="phone" required placeholder="05xx xxx xx xx">
+        </label>
+      </div>
+      <div class="form-row">
+        <label>Tarih
+          <input type="date" name="date" required>
+        </label>
+        <label>Saat
+          <input type="time" name="time" required>
+        </label>
+        <label>Kişi Sayısı
+          <input type="number" name="guests" min="1" max="30" value="2" required>
+        </label>
+      </div>
+      <label class="form-row-full">Not <span class="opt">(opsiyonel)</span>
+        <textarea name="note" rows="3" placeholder="Özel bir isteğiniz varsa yazabilirsiniz"></textarea>
+      </label>
+      <button type="submit" class="btn btn-copper" id="reserveSubmit">Rezervasyonu Gönder</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= İLETİŞİM / FOOTER ================= -->
+<footer class="site-footer" id="iletisim">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <span class="brand-text">Kızıldağ</span>
+      <p>Karadeniz Pide Restoranı</p>
+    </div>
+    <div class="footer-col">
+      <h4>Adres</h4>
+      <p>Sahil Mahallesi, Deniz Caddesi No:14<br>Trabzon, Türkiye</p>
+    </div>
+    <div class="footer-col">
+      <h4>İletişim</h4>
+      <p><a href="tel:+904620000000">0 462 000 00 00</a><br><a href="mailto:info@kizildagpide.com">info@kizildagpide.com</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Takip Edin</h4>
+      <p><a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">Google Maps</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Kızıldağ Karadeniz Pide Restoranı</span>
+  </div>
+</footer>
+
+<script type="module" src="js/supabase.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
