@@ -54,6 +54,11 @@ const FALLBACK_MENU = {
     { name: "Karalahana Sarma", desc: "Karadeniz karalahanası, pirinç, kuşbaşı et ve baharatlarla sarılıp buğulanmış.", price: "180₺" },
     { name: "Pancar Kavurma", desc: "Karadeniz pancarı, soğan ve mısır ekmeği eşliğinde hafif acılı kavurma.", price: "160₺" },
   ],
+  corba: [
+    { name: "Mısır Çorbası", desc: "Karadeniz mısırından, tereyağıyla kavrulmuş, kremamsı kıvamda.", price: "90₺" },
+    { name: "Karadeniz Balık Çorbası", desc: "Taze hamsi ve sebzelerle, günlük hazırlanan geleneksel tarif.", price: "140₺" },
+    { name: "Mercimek Çorbası", desc: "Kırmızı mercimek, tereyağı ve nane ile klasik lezzet.", price: "80₺" },
+  ],
   pide: [
     { name: "Kaşarlı Pide", desc: "Bol eritilmiş kaşar peyniri, taş fırında kabartılmış ince hamur üzerinde.", price: "260₺" },
     { name: "Kıymalı Pide", desc: "El kıyması, domates, biber ve soğanla harmanlanmış klasik lezzet.", price: "280₺" },
@@ -61,6 +66,11 @@ const FALLBACK_MENU = {
     { name: "Karışık Pide", desc: "Kıyma, sucuk, kaşar ve yumurta bir arada — sofranın en dolu hâli.", price: "320₺" },
     { name: "Sucuklu Yumurtalı Pide", desc: "Bol sucuk, çıtır kenar ve üzerinde kırılmış yumurta.", price: "290₺" },
     { name: "Ispanaklı Pide", desc: "Taze ıspanak, beyaz peynir ve az yağla hazırlanan hafif seçenek.", price: "240₺" },
+  ],
+  doner: [
+    { name: "Et Döner Porsiyon", desc: "Odun ateşinde günlük pişirilen dana etinden, pilav eşliğinde.", price: "260₺" },
+    { name: "Et Döner Dürüm", desc: "İnce lavaşta, közlenmiş sebze ve özel sos ile sarılmış.", price: "220₺" },
+    { name: "Et Döner Tabak", desc: "Bol et, közde patlıcan-biber ve yoğurt eşliğinde.", price: "290₺" },
   ],
   icecek: [
     { name: "Karadeniz Çayı", desc: "Bakır semaverde demlenen, ince belli bardakta servis edilen tavşan kanı çay.", price: "40₺" },
@@ -79,7 +89,9 @@ const FALLBACK_MENU = {
 
 const CATEGORY_LABELS = {
   ara_sicak: "Ara Sıcaklar",
+  corba: "Çorbalar",
   pide: "Pideler",
+  doner: "Et Döner",
   icecek: "İçecekler",
   tatli: "Tatlılar",
 };

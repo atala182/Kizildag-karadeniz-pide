@@ -1,0 +1,76 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="corbaBg" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#2a3f30"/>
+      <stop offset="100%" stop-color="#121a15"/>
+    </radialGradient>
+    <linearGradient id="bowlBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c1793a"/>
+      <stop offset="100%" stop-color="#7a4a22"/>
+    </linearGradient>
+    <linearGradient id="bowlRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d98a"/>
+      <stop offset="100%" stop-color="#e0ac4a"/>
+    </linearGradient>
+    <radialGradient id="soup" cx="42%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#e89a55"/>
+      <stop offset="55%" stop-color="#c1712a"/>
+      <stop offset="100%" stop-color="#873f14"/>
+    </radialGradient>
+    <linearGradient id="spoonG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0d8a8"/>
+      <stop offset="100%" stop-color="#c1793a"/>
+    </linearGradient>
+    <filter id="steamBlur2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" fill="url(#corbaBg)"/>
+
+  <!-- masa gölgesi -->
+  <ellipse cx="250" cy="410" rx="185" ry="26" fill="#000000" opacity="0.32"/>
+
+  <!-- ekmek dilimi (arkada, hafif solda) -->
+  <g transform="translate(88 300)">
+    <path d="M0 46 C -10 12 18 -12 50 -10 C 82 -8 96 22 84 50 C 64 66 20 66 0 46 Z" fill="#b5763f"/>
+    <path d="M8 40 C 0 16 20 -2 48 0 C 74 2 86 24 76 46 C 58 58 22 58 8 40 Z" fill="#e2b57c"/>
+  </g>
+
+  <!-- kase gövdesi -->
+  <ellipse cx="255" cy="300" rx="150" ry="95" fill="url(#bowlBody)"/>
+  <ellipse cx="255" cy="300" rx="150" ry="95" fill="#000000" opacity="0.12"/>
+
+  <!-- kase ağzı (rim) -->
+  <ellipse cx="255" cy="238" rx="150" ry="42" fill="url(#bowlRim)"/>
+  <ellipse cx="255" cy="238" rx="150" ry="42" fill="none" stroke="#a8652e" stroke-width="3"/>
+
+  <!-- çorba yüzeyi -->
+  <ellipse cx="255" cy="238" rx="130" ry="32" fill="url(#soup)"/>
+
+  <!-- krema süsleme -->
+  <path d="M175 236 C 205 222 232 253 262 234 C 288 218 312 240 330 231"
+        fill="none" stroke="#f7e6c8" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- otlar / pul biber -->
+  <g fill="#4f7a4a">
+    <ellipse cx="215" cy="248" rx="5" ry="2.5" transform="rotate(20 215 248)"/>
+    <ellipse cx="300" cy="245" rx="5" ry="2.5" transform="rotate(-15 300 245)"/>
+  </g>
+  <g fill="#a1341f">
+    <circle cx="235" cy="253" r="2"/>
+    <circle cx="275" cy="250" r="2"/>
+  </g>
+
+  <!-- kaşık: sapı kaseden dışarı, kaşık başı çorbada -->
+  <g transform="rotate(24 255 238)">
+    <rect x="251" y="238" width="9" height="150" rx="4.5" fill="url(#spoonG)"/>
+    <ellipse cx="255" cy="230" rx="19" ry="13" fill="url(#spoonG)"/>
+  </g>
+
+  <!-- buhar -->
+  <g stroke="#ede7d9" stroke-width="6" fill="none" opacity="0.35" filter="url(#steamBlur2)" stroke-linecap="round">
+    <path d="M220 195 C 210 155 240 135 228 93"/>
+    <path d="M280 190 C 270 150 302 130 288 85"/>
+  </g>
+</svg>

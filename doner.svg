@@ -1,0 +1,74 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="donerBg" cx="50%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#3a2416"/>
+      <stop offset="55%" stop-color="#20140f"/>
+      <stop offset="100%" stop-color="#121a15"/>
+    </radialGradient>
+    <radialGradient id="fireGlow" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#e2894c" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#e2894c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="meatLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a8471f"/>
+      <stop offset="50%" stop-color="#7a2e1f"/>
+      <stop offset="100%" stop-color="#4f1c12"/>
+    </linearGradient>
+    <linearGradient id="charEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2a15c"/>
+      <stop offset="100%" stop-color="#8a4f24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="500" height="500" fill="url(#donerBg)"/>
+  <ellipse cx="250" cy="430" rx="180" ry="30" fill="url(#fireGlow)"/>
+
+  <!-- şiş -->
+  <rect x="246" y="60" width="8" height="380" fill="#c1793a"/>
+  <circle cx="250" cy="55" r="9" fill="#c1793a"/>
+
+  <!-- et katmanları (konik yığın) -->
+  <g>
+    <path d="M250 90
+             C 200 95, 175 120, 178 150
+             C 180 175, 320 175, 322 150
+             C 325 120, 300 95, 250 90 Z" fill="url(#meatLight)"/>
+    <path d="M250 150
+             C 190 155, 160 190, 165 225
+             C 168 255, 332 255, 335 225
+             C 340 190, 310 155, 250 150 Z" fill="url(#meatLight)"/>
+    <path d="M250 225
+             C 180 232, 145 270, 150 305
+             C 154 335, 346 335, 350 305
+             C 355 270, 320 232, 250 225 Z" fill="url(#meatLight)"/>
+    <path d="M250 305
+             C 172 312, 132 350, 138 385
+             C 142 410, 358 410, 362 385
+             C 368 350, 328 312, 250 305 Z" fill="url(#meatLight)"/>
+  </g>
+
+  <!-- kızarmış / karizeli kenar çizgileri -->
+  <g fill="none" stroke="url(#charEdge)" stroke-width="4" opacity="0.8" stroke-linecap="round">
+    <path d="M178 150 C 220 165 280 165 322 150"/>
+    <path d="M165 225 C 220 245 280 245 335 225"/>
+    <path d="M150 305 C 220 328 280 328 350 305"/>
+    <path d="M138 385 C 220 408 280 408 362 385"/>
+  </g>
+
+  <!-- ışık vurgusu -->
+  <ellipse cx="215" cy="230" rx="18" ry="70" fill="#c1793a" opacity="0.28"/>
+
+  <!-- bıçak (dilimleme) -->
+  <g transform="translate(330 260) rotate(-32)">
+    <rect x="0" y="-5" width="130" height="10" rx="4" fill="#ede7d9" opacity="0.9"/>
+    <rect x="126" y="-14" width="50" height="28" rx="5" fill="#c1793a"/>
+  </g>
+
+  <!-- düşen ince dilim -->
+  <g transform="translate(300 330) rotate(18)" opacity="0.95">
+    <path d="M0 0 C 20 -8 46 -6 58 6 C 46 16 18 16 0 0 Z" fill="url(#charEdge)"/>
+  </g>
+
+  <!-- alt tabakta pilav / lavaş ipucu -->
+  <ellipse cx="250" cy="450" rx="130" ry="16" fill="#c98a4b" opacity="0.5"/>
+</svg>

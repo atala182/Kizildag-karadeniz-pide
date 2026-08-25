@@ -113,3 +113,10 @@ yüzden mutlaka bir yerel sunucu üzerinden çalıştırın.)
   `<footer>` bölümü.
 - **Logo/işaret:** `index.html` içinde `.brand-mark` SVG'si — kendi
   logonuzla değiştirebilirsiniz.
+- **Yemek görselleri:** `assets/images/pide.jpg`, `corba.jpg`, `doner.jpg`
+  şu an markanın renklerine uygun özel çizim illüstrasyonlar. Kendi
+  restoran fotoğraflarınızı çektirdiğinizde, **aynı dosya adlarıyla**
+  (aynı klasöre) üzerine kaydetmeniz yeterli — kodda hiçbir değişiklik
+  gerekmez. İdeal en-boy oranı: `pide.jpg` için yatay (yaklaşık 4:3
+  geniş), `corba.jpg` ve `doner.jpg` için kare (1:1). En az 1000px
+  genişlik önerilir.

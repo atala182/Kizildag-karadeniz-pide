@@ -1,0 +1,107 @@
+<svg viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pideBg" cx="55%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#2a3f30"/>
+      <stop offset="100%" stop-color="#121a15"/>
+    </radialGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a3a24"/>
+      <stop offset="100%" stop-color="#3a2416"/>
+    </linearGradient>
+    <linearGradient id="crust" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e2a15c"/>
+      <stop offset="55%" stop-color="#c1793a"/>
+      <stop offset="100%" stop-color="#8a4f24"/>
+    </linearGradient>
+    <linearGradient id="cheese" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5d98a"/>
+      <stop offset="100%" stop-color="#e0ac4a"/>
+    </linearGradient>
+    <radialGradient id="yolk" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffcf6b"/>
+      <stop offset="100%" stop-color="#e2894c"/>
+    </radialGradient>
+    <filter id="steamBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="700" height="500" fill="url(#pideBg)"/>
+
+  <!-- ahşap tezgah -->
+  <ellipse cx="350" cy="380" rx="330" ry="70" fill="url(#board)"/>
+  <ellipse cx="350" cy="372" rx="300" ry="55" fill="#4a2f1c" opacity="0.4"/>
+  <g stroke="#2e1c10" stroke-width="1.5" opacity="0.3">
+    <path d="M60 360 Q 350 400 640 360"/>
+    <path d="M75 400 Q 350 435 625 400"/>
+  </g>
+
+  <!-- tabak gölgesi -->
+  <ellipse cx="350" cy="312" rx="235" ry="26" fill="#000000" opacity="0.32"/>
+
+  <!-- pide gövdesi (kayık şekli) -->
+  <path d="M110 300
+           C 150 220, 260 175, 350 175
+           C 440 175, 550 220, 590 300
+           C 550 330, 440 300, 350 300
+           C 260 300, 150 330, 110 300 Z"
+        fill="url(#crust)" stroke="#6b3a1c" stroke-width="3"/>
+
+  <!-- kıvrık kenar detayları -->
+  <g fill="none" stroke="#a85c2c" stroke-width="2.5" opacity="0.6">
+    <path d="M130 295 C 170 240 270 200 350 198"/>
+    <path d="M570 295 C 530 240 430 200 350 198"/>
+  </g>
+
+  <!-- iç kısım (peynir) -->
+  <path d="M155 290
+           C 195 235, 270 205, 350 205
+           C 430 205, 505 235, 545 290
+           C 500 305, 430 285, 350 285
+           C 270 285, 200 305, 155 290 Z"
+        fill="url(#cheese)"/>
+
+  <!-- eritilmiş peynir dokusu -->
+  <g fill="#f7e3ab" opacity="0.55">
+    <ellipse cx="270" cy="250" rx="26" ry="12"/>
+    <ellipse cx="350" cy="235" rx="30" ry="13"/>
+    <ellipse cx="430" cy="252" rx="24" ry="11"/>
+    <ellipse cx="310" cy="270" rx="20" ry="9"/>
+    <ellipse cx="400" cy="272" rx="22" ry="9"/>
+  </g>
+
+  <!-- yumurta -->
+  <ellipse cx="350" cy="255" rx="52" ry="34" fill="#f4ecd8"/>
+  <circle cx="335" cy="252" r="17" fill="url(#yolk)"/>
+  <circle cx="329" cy="246" r="5" fill="#fff3d6" opacity="0.85"/>
+
+  <!-- pul biber -->
+  <g fill="#a1341f">
+    <circle cx="230" cy="270" r="2.5"/>
+    <circle cx="245" cy="260" r="2"/>
+    <circle cx="410" cy="268" r="2.5"/>
+    <circle cx="460" cy="258" r="2"/>
+    <circle cx="280" cy="290" r="2"/>
+    <circle cx="420" cy="288" r="2.2"/>
+  </g>
+
+  <!-- maydanoz -->
+  <g fill="#4f7a4a">
+    <ellipse cx="255" cy="278" rx="6" ry="3" transform="rotate(30 255 278)"/>
+    <ellipse cx="450" cy="275" rx="6" ry="3" transform="rotate(-20 450 275)"/>
+    <ellipse cx="380" cy="290" rx="5" ry="2.5" transform="rotate(10 380 290)"/>
+  </g>
+
+  <!-- buhar -->
+  <g stroke="#ede7d9" stroke-width="6" fill="none" opacity="0.35" filter="url(#steamBlur)" stroke-linecap="round">
+    <path d="M280 170 C 270 130 300 110 288 70"/>
+    <path d="M350 165 C 340 125 372 105 358 62"/>
+    <path d="M420 170 C 410 130 440 110 428 70"/>
+  </g>
+
+  <!-- bakır bıçak -->
+  <g transform="translate(560 340) rotate(-18)">
+    <rect x="0" y="-4" width="90" height="8" rx="4" fill="#c1793a"/>
+    <rect x="85" y="-10" width="46" height="20" rx="4" fill="#ede7d9" opacity="0.85"/>
+  </g>
+</svg>
