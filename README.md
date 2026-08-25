@@ -1,7 +1,7 @@
 # Kızıldağ — Karadeniz Pide Restoranı
 
 Statik, tek sayfalık ve tamamen özel tasarlanmış restoran web sitesi.
-Menü ve rezervasyonlar Supabase üzerinden yönetilir; site GitHub +
+Menü ve siparişler Supabase üzerinden yönetilir; site GitHub +
 Netlify ile canlıya alınacak şekilde hazırlanmıştır. Build adımı
 gerektirmez (saf HTML/CSS/JS) — bu yüzden kurulum çok hızlıdır.
 
@@ -11,7 +11,7 @@ kizildag/
 ├── css/style.css
 ├── js/
 │   ├── supabase.js      ← Supabase URL + anon key buraya girilir
-│   └── main.js          ← menü/rezervasyon mantığı
+│   └── main.js          ← menü/sepet/sipariş mantığı
 ├── supabase/schema.sql  ← veritabanı şeması + örnek menü
 └── README.md
 ```
@@ -24,7 +24,7 @@ Sizin için gerçek bir Supabase projesi oluşturuldu ve bağlandı:
 
 - **Proje:** `kizildag-pide` (org: `irkayazılımmuhasebe`, bölge: `eu-central-1`)
 - **Project URL:** `https://jdlorqcbmknynaridpxa.supabase.co`
-- `menu_items` ve `reservations` tabloları, RLS politikaları ve örnek
+- `menu_items` ve `orders` tabloları, RLS politikaları ve örnek
   menü verisi zaten kuruldu (`supabase/schema.sql` bunun kaydıdır —
   projeyi başka bir Supabase hesabına taşımak isterseniz aynı dosyayı
   yeni projede çalıştırmanız yeterli).
@@ -35,7 +35,7 @@ Sizin için gerçek bir Supabase projesi oluşturuldu ve bağlandı:
 
 > `anon` anahtarı istemci tarafında kullanılmak üzere tasarlanmıştır,
 > paylaşılması güvenlik sorunu değildir — koruma RLS politikalarıyla
-> sağlanır (ziyaretçiler yalnızca rezervasyon **ekleyebilir**, menüyü
+> sağlanır (ziyaretçiler yalnızca sipariş **ekleyebilir**, menüyü
 > yalnızca **okuyabilir**).
 
 **Menüyü yönetmek:** Supabase panelinde **Table Editor → menu_items**
@@ -44,7 +44,10 @@ kod değiştirmeden menüyü güncelleyebilirsiniz — site otomatik olarak
 güncel veriyi çeker. Supabase henüz bağlanmadıysa site, dosyaların
 içine gömülü aynı menüyü göstermeye devam eder (site asla boş kalmaz).
 
-**Rezervasyonları görmek:** **Table Editor → reservations**.
+**Siparişleri görmek ve durumunu güncellemek:** **Table Editor → orders**.
+`status` sütununu `pending` → `preparing` → `ready`/`on_the_way` → `completed`
+olarak elle güncelleyerek sipariş akışını takip edebilirsiniz. `items`
+sütunu her siparişin sepet içeriğini JSON olarak tutar.
 
 ---
 
